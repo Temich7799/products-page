@@ -1,0 +1,12 @@
+@import 'main_vars';
+
+body {
+    max-width: $window-width;
+    font-family: $main-font;
+    background-color: $primary-color;
+    color: $font-primary;
+    margin: 0 auto;
+    
+    :nth-child(n):focus { outline: 2px solid adjust-hue($reject, 55deg); }
+    
+}

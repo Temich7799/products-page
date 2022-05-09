@@ -1,0 +1,24 @@
+@import '../../../../main_vars';
+
+.product_add_attr {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    grid-column: span 2;
+
+    p {
+        font-size: 14px;
+        color: $font-secondary;
+    }
+
+    input {
+        width: 50px;
+        float: right;
+    }
+
+    label {
+        margin-left: 0;
+    }
+}

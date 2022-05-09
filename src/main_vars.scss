@@ -1,0 +1,11 @@
+$window-width: 1320px;
+$main-font: 'Work Sans', sans-serif;
+
+$primary-color: rgb(35, 40, 55);
+$font-primary: lighten($primary-color, 40%);
+
+$secondary-color: rgb(145, 189, 225);
+$font-secondary: mix($primary-color, $secondary-color, 60%);
+
+$accept: rgb(0, 200, 140);
+$reject: rgb(240, 60, 90);

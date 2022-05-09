@@ -1,0 +1,11 @@
+@import '../../../../main_vars';
+
+input {
+    margin: 2px 0;
+    float: right;
+    @include reset-default();
+
+    &.invalid {
+        background: lighten($reject, 25%);
+    }
+}
