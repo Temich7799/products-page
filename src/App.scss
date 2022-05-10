@@ -6,7 +6,11 @@ body {
     background-color: $primary-color;
     color: $font-primary;
     margin: 0 auto;
-    
-    :nth-child(n):focus { outline: 2px solid adjust-hue($reject, 55deg); }
-    
+
+    :nth-child(n):focus {
+        outline: 2px solid adjust-hue($reject, 55deg);
+    }
+    main {
+        min-height: 65vh;
+    }
 }

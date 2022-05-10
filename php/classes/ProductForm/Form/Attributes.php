@@ -2,10 +2,10 @@
 
 class Attributes
 {
-    protected $title = '';
-    protected $description = '';
-    protected $unit = '';
-    protected $inputs = [];
+    private $title = '';
+    private $description = '';
+    private $unit = '';
+    private $inputs = [];
 
     function __construct($title, $description, $unit, $inputs = [])
     {
@@ -15,7 +15,7 @@ class Attributes
         $this->inputs = $inputs;
     }
 
-    function getAttributes()
+    function getArray()
     {
         return [
             'title' => $this->title,

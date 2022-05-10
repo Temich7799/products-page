@@ -1,10 +1,11 @@
 import axios from "axios";
 
 function saveProduct() {
-    axios.post('http://localhost:8888/project/php/scripts/product_add/product_form/save_product.php', makeFormData())
+    axios.post('https://productspage22.000webhostapp.com/php/scripts/productForm/saveProduct.php', makeFormData())
         .then(function (response) {
             if (response.status === 200) document.location = '/';
             else console.log(response.data);
+            console.log(response.data);
         })
         .catch(function (error) {
             console.log(error);

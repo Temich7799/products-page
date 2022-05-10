@@ -7,7 +7,7 @@ function deleteChecked(loadProducts, setProducts) {
     }
 //adding the checked inputs to an array and then if true, make a query
     if (checked.length) {
-        axios.post('http://localhost:8888/project/php/scripts/product_list/delete_products.php', checked)
+        axios.post('https://productspage22.000webhostapp.com/php/scripts/productList/deleteProducts.php', checked)
             .then(function (response) {
                 if (response.status === 200) { loadProducts(setProducts) }
                 else console.log(response.data);

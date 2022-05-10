@@ -8,6 +8,18 @@
     margin-top: 15px;
     grid-column: span 2;
 
+    @media(max-width: 500px) {
+        display: block;
+
+        input {
+            float: none;
+        }
+
+        label {
+            display: block;
+        }
+    }
+
     p {
         font-size: 14px;
         color: $font-secondary;
@@ -15,7 +27,6 @@
 
     input {
         width: 50px;
-        float: right;
     }
 
     label {

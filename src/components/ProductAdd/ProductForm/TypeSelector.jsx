@@ -2,15 +2,15 @@ import { useEffect, useState } from 'react';
 import Attributes from './Attributes/Attributes';
 import Input from './Input/Input';
 import customValidity from '../../../js/productAdd/productForm/customValidity';
-import getType from '../../../js/productAdd/productForm/getType';
+import getTypeInputs from '../../../js/productAdd/productForm/getTypeInputs';
 
 const TypeSelector = ({ ...props }) => {
     const [attributes, setAttributes] = useState([]);
-    useEffect(() => getType(setAttributes), []);
+    useEffect(() => getTypeInputs(setAttributes), []);
     return (
         <div {...props}>
             <label htmlFor="select">Type Switcher</label>
-            <select id="productType" onChange={(e) => getType(setAttributes, e.target.value)}>
+            <select id="productType" onChange={(e) => getTypeInputs(setAttributes, e.target.value)}>
                 <option>DVD</option>
                 <option>Book</option>
                 <option>Furniture</option>

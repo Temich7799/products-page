@@ -1,7 +1,8 @@
 @import '../../../../main_vars';
 
 .product_form {
-    max-width: 500px;
+    max-width: 600px;
+    margin: auto 5%;
     text-align: center;
     @mixin reset-default {
         border-radius: 2px;

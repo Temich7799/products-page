@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 function loadProducts(setProducts) {
-    axios.post('http://localhost:8888/project/php/scripts/product_list/load_products.php', '')
+    axios.post('https://productspage22.000webhostapp.com/php/scripts/productList/loadProducts.php', '')
         .then((response) => { setProducts(response.data) })
         .catch((error) => console.log(error));
 }

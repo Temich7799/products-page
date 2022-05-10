@@ -23,7 +23,7 @@ class Input
         $this->warningMessage = $warningMessage;
     }
 
-    function getInput()
+    function getArray()
     {
         $result = [
             'forValidate' => ['warningMessage' => $this->warningMessage, 'pattern' => $this->pattern],

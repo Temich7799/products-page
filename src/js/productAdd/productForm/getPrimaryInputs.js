@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 function getPrimaryInputs(setPrimaryInputs) {
-    axios.post('http://localhost:8888/project/php/scripts/product_add/product_form/get_primary_inputs.php', '')
+    axios.post('https://productspage22.000webhostapp.com/php/scripts/productForm/inputs/primaryInputs.php', '')
         .then((response) => setPrimaryInputs(response.data))
         .catch((error) => console.log(error));
 }
