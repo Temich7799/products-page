@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react';
-import loadProducts from '../../../js/productList/loadProducts';
+import loadProducts from '../../../services/productList/loadProducts';
 import Header from '../../main/Header/Header';
 import HeaderButtons from '../HeaderButtons/HeaderButtons';
 import Product from '../Product/Product';
 import './ProductList.scss';
 
-const ProductList = () => {
+function ProductList() {
     const [products, setProducts] = useState([]);
     useEffect(() => loadProducts(setProducts), []);
-
     return (
         <>
             <Header title="Product List" buttons={HeaderButtons(loadProducts, setProducts)} />

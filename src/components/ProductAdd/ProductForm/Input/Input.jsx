@@ -1,4 +1,4 @@
-const Input = ({ children, ...props }) => {
+function Input({ children, ...props }) {
     const name = children.split(' ')[0].toLowerCase();
     return (
         <>

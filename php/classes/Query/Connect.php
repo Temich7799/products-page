@@ -10,7 +10,7 @@ class Connect
     function getDatabase()
     {
         $result = mysqli_connect($this->host, $this->user, $this->pass, $this->base);
-        //if (!$result) print('Error: ' . mysqli_connect_error());
+        if (!$result) print('Error: ' . mysqli_connect_error());
         return $result;
     }
 }

@@ -1,6 +1,6 @@
-@import '../../../main_vars';
+@import '../../../sass/mainVars';
 
-.product_thumb {
+.productThumb {
     background-color: white;
     border: 1px $secondary-color solid;
     height: 200px;
@@ -12,14 +12,14 @@
     float: left;
 }
 
-.product_caption {
+.productCaption {
     overflow: scroll;
     max-height: 145px;
     margin: 27px;
     text-align: center;
 }
 
-.product_list_attr {
+.productListAttr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

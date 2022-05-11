@@ -1,13 +1,13 @@
-import deleteChecked from '../../../js/productList/deleteCheked';
-import './HeaderButtons.scss';
+import deleteChecked from '../../../services/productList/deleteCheked';
+import '../../../sass/HeaderButtons.scss';
 
-const HeaderButtons = (loadProducts, setProducts) => {
+function HeaderButtons(loadProducts, setProducts) {
+    const handlerClick = () => deleteChecked(loadProducts, setProducts);
     return (
-        <div className="header_buttons">
+        <div className="headerButtons">
             <a href="/add-product"><button>ADD</button></a>
-            <button id="delete-product-btn" onClick={() => deleteChecked(loadProducts, setProducts)}>MASS DELETE</button>
+            <button id="delete-product-btn" onClick={handlerClick}>MASS DELETE</button>
         </div>
-
     )
 }
 

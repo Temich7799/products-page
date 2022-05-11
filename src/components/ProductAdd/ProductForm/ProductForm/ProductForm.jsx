@@ -1,13 +1,14 @@
-import saveProduct from '../../../../js/productAdd/productForm/saveProduct';
+import saveProduct from '../../../../services/productAdd/productForm/saveProduct';
 import PrimaryInputs from '../PrimaryInputs';
 import TypeSelector from '../TypeSelector';
 import './ProductForm.scss';
 
-const ProductForm = ({ ...props }) => {
+function ProductForm(props) {
+    const sumbit = (e) => { e.preventDefault(); saveProduct() };
     return (
-        <form onSubmit={(e) => { e.preventDefault(); saveProduct() }} {...props}>
-            <PrimaryInputs className='primary_inputs' />
-            <TypeSelector className='type_selector' />
+        <form onSubmit={sumbit} {...props}>
+            <PrimaryInputs className='primaryInputs' />
+            <TypeSelector className='typeSelector' />
         </form>
     )
 }

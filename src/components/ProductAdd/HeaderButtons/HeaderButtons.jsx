@@ -1,14 +1,14 @@
 import { useNavigate } from 'react-router-dom';
-import './HeaderButtons.scss';
+import '../../../sass/HeaderButtons.scss';
 
-const HeaderButtons = () => {
+function HeaderButtons() {
     const goBack = useNavigate();
+    const handlerClick = () => goBack(-1);
     return (
-        <div className="header_buttons">
-            <button type="submit" form="product_form">Save</button>
-            <button onClick={() => goBack(-1)} >Cancel</button>
+        <div className='headerButtons'>
+            <button type='submit' form='product_form'>Save</button>
+            <button onClick={handlerClick}>Cancel</button>
         </div>
-
     )
 }
 

@@ -39,4 +39,13 @@ class Type extends Form
                 'attributes' => $this->attributes
             ];
     }
+
+    static function getOptions(): array
+    {
+        $result = [];
+        foreach (scandir('types') as $type) {
+            if ($type[0] != '.') array_push($result, ucfirst(substr($type, 0, -4)));
+        }
+        return $result;
+    }
 }

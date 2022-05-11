@@ -44,5 +44,13 @@
   "main": "index.js",
   "author": "",
   "license": "ISC",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Temich7799/products-page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Temich7799/products-page/issues"
+  },
   "description": ""
 }

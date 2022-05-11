@@ -1,7 +1,7 @@
-@import '../../../main_vars';
+@import '../sass/mainVars';
 $text-color: white;
 
-.header_buttons {
+.headerButtons {
     display: flex;
     justify-content: space-around;
     margin-right: 2%;

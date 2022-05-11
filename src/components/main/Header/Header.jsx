@@ -1,6 +1,6 @@
 import './Header.scss';
 
-const Header = ({buttons, title}) => { 
+function Header({ buttons, title }) {
     return (
         <header>
             <h1>{title}</h1>

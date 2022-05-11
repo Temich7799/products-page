@@ -1,16 +1,18 @@
-@import '../../../../main_vars';
+@import '../../../../sass/mainVars';
+
+@mixin reset-default {
+    border-radius: 2px;
+    outline: 0;
+    border: none;
+}
+
+@import '../Input/Input';
+@import '../Attributes/Attributes.scss';
 
 .product_form {
     max-width: 600px;
     margin: auto 5%;
     text-align: center;
-    @mixin reset-default {
-        border-radius: 2px;
-        outline: 0;
-        border: none;
-    }
-
-    @import '../Input/Input';
 
     label {
         display: flex;
@@ -24,15 +26,12 @@
     }
 }
 
-.primary_inputs {
+.primaryInputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2% 0;
 }
 
-.type_selector {
+.typeSelector {
     display: grid;
 }
-
-
-@import '../Attributes/Attributes.scss';
